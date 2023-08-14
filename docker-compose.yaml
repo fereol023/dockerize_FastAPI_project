@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    container_name: docker_fastapi
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
